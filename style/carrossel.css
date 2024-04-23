@@ -1,0 +1,150 @@
+.carrossel__titulo{
+    color: var(--cor-palavra-destaque);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    background-color: var(--cor-header);
+    padding-top:0.75rem ;
+    padding-bottom: .75rem;
+}
+
+.swiper-slide img{
+    width: 100%;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    
+    
+}
+.swiper-button-prev,.swiper-button-next{
+    display: none;
+}
+.swiper-pagination{
+    position: initial;
+    padding: .75em 0 1em 0;
+}   
+
+.card__descrição{
+    display: flex;
+    justify-content: space-between;
+}
+.card__botões{
+    display: flex;
+    justify-content: space-between;
+}
+
+.botões{
+    display: flex;
+    margin: .5em;
+}
+
+.card{
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 1.5rem;
+    padding: 1rem;
+}
+
+.descrição__titulo{
+    color: var(--cor-palavra-destaque);
+    font-weight: 700;
+}
+
+.descrição__titulo-livro{
+    padding-top: 0.56rem;
+    color: var(--azul);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.descrição__texto{
+    padding-top: 0.56rem;
+    font-size: 14px;
+    font-weight: 400;
+    padding-right: .5rem;
+    padding-bottom: .5em;
+}
+
+.botões__item{
+    margin: 0 .5rem;
+}
+
+.botão__ancora{
+    background-color: var(--cor-palavra-destaque);
+    margin-top: 0.5em;
+    padding: 1em 2.3em;
+    color: var(--cor-header);
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 4px;
+}
+
+.descrição__imagem-estrelinha{
+    margin-bottom: 0.5rem;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .carrossel__titulo{
+        padding: 1em 0 1em 0;
+        font-size: 26px;
+    }
+    .swiper-pagination{
+        margin: 2em 0 1em 0;
+    }
+
+    .swiper {
+        width: 75%;
+    }
+
+    .swiper-slide{
+        padding: 0 .5em;
+    }
+
+    .swiper-button-prev,.swiper-button-next {
+        display: block;
+        top: 60%;
+    }
+
+    .card{
+        width: 40%;
+        margin:  2em auto;
+    }
+
+}
+
+@media screen and (min-width: 1728px){
+    .carrossel__container{
+        display: flex;
+        margin: 0 20vw 3em 20vw;
+        align-items: center;
+    }
+
+    .swiper-pagination{ 
+        margin: 0;
+    }
+
+    .swiper{
+        width: 50%;
+    }
+
+    .descrição__titulo{
+        font-size: 32px;
+    }
+
+    .descrição__texto{
+        font-size: 16px;
+    }
+
+    .descrição{
+        margin-right: 1.5em;
+    }
+
+    .card{
+        width: 60%;
+        margin-left: 4em;
+    }
+
+}
+
